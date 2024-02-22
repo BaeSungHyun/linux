@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/CCode.dir/preprocessor_macro.c.o -o CCode  -Wl,-rpath,/home/baebae/c_tutorial/cmake/build/src/shlib: libswap.a ../shlib/libcustomstring.so.1.0.0 

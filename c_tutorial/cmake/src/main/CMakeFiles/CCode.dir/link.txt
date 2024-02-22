@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/CCode.dir/main_customstring.c.o -o CCode  -Wl,-rpath,::: 

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libcustomstring.so.1 -o libcustomstring.so.1.0.0 CMakeFiles/customstring.dir/customstring.c.o 
