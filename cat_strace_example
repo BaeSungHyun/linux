@@ -1,0 +1,52 @@
+execve("/usr/bin/cat", ["cat", "/dev/null"], 0x7ffca7b54658 /* 28 vars */) = 0
+brk(NULL)                               = 0x55adea7ad000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffedd5432f0) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7d15860000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22167, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 22167, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7d1585a000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7d15631000
+mprotect(0x7f7d15659000, 2023424, PROT_NONE) = 0
+mmap(0x7f7d15659000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f7d15659000
+mmap(0x7f7d157ee000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f7d157ee000
+mmap(0x7f7d15847000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f7d15847000
+mmap(0x7f7d1584d000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7d1584d000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7d1562e000
+arch_prctl(ARCH_SET_FS, 0x7f7d1562e740) = 0
+set_tid_address(0x7f7d1562ea10)         = 4278
+set_robust_list(0x7f7d1562ea20, 24)     = 0
+rseq(0x7f7d1562f0e0, 0x20, 0, 0x53053053) = 0
+mprotect(0x7f7d15847000, 16384, PROT_READ) = 0
+mprotect(0x55adea4af000, 4096, PROT_READ) = 0
+mprotect(0x7f7d1589a000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7f7d1585a000, 22167)           = 0
+getrandom("\xb0\x66\x05\x86\x65\x95\x37\x12", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x55adea7ad000
+brk(0x55adea7ce000)                     = 0x55adea7ce000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3048928, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 3048928, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7d15345000
+close(3)                                = 0
+newfstatat(1, "", {st_mode=S_IFCHR|0600, st_rdev=makedev(0x4, 0x2), ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/dev/null", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
+fadvise64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7d15323000
+read(3, "", 131072)                     = 0
+munmap(0x7f7d15323000, 139264)          = 0
+close(3)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
